@@ -46,11 +46,17 @@ Citizen-service information can become difficult to organize when requests and r
 
 ```text
 NEXORA-Smart-City-Service-System/
-├── source\_code/                  # Application source files
 ├── database/
-│   └── nexora\_database.sql   # Schema-only database script
+│   └── nexora_database.sql
 ├── report/
-│   └── NEXORA\_Report.pdf
+│   └── NEXORA_Report.pdf
+├── source_code/
+│   ├── config.php
+│   ├── index.php
+│   ├── save.php
+│   ├── search.php
+│   ├── style.css
+│   └── view.php
 └── README.md
 ```
 
@@ -70,7 +76,7 @@ This is a suggested structure. Keep the repository structure consistent with the
 3. Copy the project folder into XAMPP's `htdocs` directory.
 4. Open phpMyAdmin at `http://localhost/phpmyadmin/`.
 5. Create the database expected by the project configuration.
-6. Import `database/nexora\_database.sql`.
+6. Import `database/nexora_database.sql`.
 7. Configure the application's database connection using your own local credentials. Do not copy production credentials into the repository.
 8. Open the project in your browser. For a folder named `NEXORA`, use `http://localhost/NEXORA/`.
 
